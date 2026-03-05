@@ -1,0 +1,66 @@
+# Basis of Linear Regression
+
+(1) What is Linear Regression?
+
+    - Linear Regression predicts a continous output (e.g., price, temperature, salary) from input features
+    - Finds a straight line that best fits the data
+    - Equation (Simple Linear Regression)
+
+            y = mx + c
+    
+            y = predicted output
+            x = input feature
+            m = slope of the line
+            c = intercept (y-value when x = 0)
+
+    - Multiple Linear Regression:
+
+            y = b0 + b1x1 + b2x2 + ... + bn*xn
+
+            b0 = intercept
+            b1, b2,... = coefficients for each feature     
+
+2. How Linear Regression Works
+
+   (A) Collect data (X = input, Y = output)
+   (B) Fit the line to minimize error
+   (C) Predict Y for new X values
+
+        Error measure (Mean Squared Error, MSE):
+        MSE = (1/n) * Σ(y_i - ŷ_i)^2
+
+        y_i = actual value
+
+        ŷ_i = predicted value
+
+        n = number of samples 
+
+3. Types of Linear Regression
+
+    (A) Simple Linear Regression: 1 input → 1 output
+    (B) Multiple Linear Regression: Multiple inputs → 1 output
+
+4. Assumptions of Linear Regression
+
+    (A) Linearity: Relationship between X and Y is linear
+    (B) Independence: Data points are independent
+    (C) Homoscedasticity: Constant variance of errors
+    (D) Normality of Errors: Residuals are normally distributed
+
+5. Evaluation Metrics
+
+    (A) R-squared (R²): How well the line fits the data (0–1 scale)
+    (B) Mean Squared Error (MSE): Average squared difference between predicted & actual
+    (C) Root Mean Squared Error (RMSE): √MSE, error in same units as Y
+    
+6. Advantages
+
+    (A) Simple and easy to implement
+    (B) Works well with linear relationships
+    (C) Computationally inexpensive
+
+7. Limitations
+
+    (A) Cannot handle non-linear relationships
+    (B) Sensitive to outliers
+    (C) Assumes linearity and normality of errors
